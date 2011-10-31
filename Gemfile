@@ -1,9 +1,8 @@
 require 'rubygems'
 source 'http://rubygems.org'
 
-gem 'mongo', '~> 1.4.1'
-gem 'bson', '~> 1.4.1'
-gem 'bson_ext', '~> 1.4.1'
+gem 'mongo', '>= 1.4.1'
+gem 'bson_ext', '>= 1.4.1'
 
 group :test do
   gem 'rspec'
