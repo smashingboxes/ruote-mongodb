@@ -1,8 +1,8 @@
 require 'rubygems'
 source 'http://rubygems.org'
 
-gem 'mongo'
-gem 'bson_ext'
+gem 'mongo', '~> 1.3.1'
+gem 'bson_ext', '~> 1.3.1'
 
 group :test do
   gem 'rspec'
