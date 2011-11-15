@@ -27,7 +27,7 @@ module Ruote
 
       # Support uri connection format
       if db_config['uri']
-      	@db = Mongo::Connection.from_uri(db_config['uri'])
+      	@db = Mongo::Connection.from_uri(ERB.new(db_config['uri']).result)
       else
         @db = Mongo::Connection.new(db_config['host'], db_config['port']).
 	  db(db_config['database'])
